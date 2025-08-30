@@ -31,7 +31,7 @@ The UI should balance **approachability (homeowners)** and **professionalism (bu
 
 1. **Hero Section**
 
-   - Large headline: _“Power Your Home & Business with Clean, Affordable Solar Energy”_.
+   - headline: _“Power Your Home & Business with Clean, Affordable Solar Energy”_.
    - Sub-headline explaining savings & sustainability.
    - Primary CTA: _“Get a Free Quote”_; Secondary CTA: _“Learn More”_.
    - Background: Solar panels + subtle animated sunlight effect.
@@ -73,8 +73,7 @@ The UI should balance **approachability (homeowners)** and **professionalism (bu
 
 6. **Testimonials**
 
-   - 2–3 customer reviews (homeowner + business).
-   - Optionally include before/after savings.
+   - 2–5 customer reviews (homeowner + business).
    - GSAP: fade/slide carousel transitions.
 
 7. **FAQ Section**
