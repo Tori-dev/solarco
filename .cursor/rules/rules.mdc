@@ -1,0 +1,61 @@
+---
+alwaysApply: true
+---
+
+Read prd.md first before editing.
+
+Do not generate package.json, vite.config.js, or install npm modules. Use CDN imports only.
+
+Structure:
+
+index.html
+css/style.css (if needed, though Tailwind handles most styling)
+js/animations.js
+js/form.js
+assets/
+
+
+Use Tailwind utilities (via CDN config block). If a repeated class pattern occurs, extend Tailwind via tailwind.config = { theme: { extend: { ... } } } in the CDN script.
+
+Import GSAP + ScrollTrigger via CDN. Keep all animations in js/animations.js.
+
+Accessibility-first (aria labels, alt text, semantic HTML).
+
+Animations must follow PRD. Do not add effects not listed.
+
+For forms, implement front-end only. If no backend, mock with console log + placeholder alert.
+
+Optimize for performance: lazy-load images, compress to WebP, and keep scripts at the bottom with defer.Read prd.md first before editing.
+
+Do not generate package.json, vite.config.js, or install npm modules. Use CDN imports only.
+
+Structure:
+
+index.html
+css/style.css (if needed, though Tailwind handles most styling)
+js/animations.js
+js/form.js
+assets/
+
+
+Use Tailwind utilities (via CDN config block). If a repeated class pattern occurs, extend Tailwind via tailwind.config = { theme: { extend: { ... } } } in the CDN script.
+
+Import GSAP + ScrollTrigger via CDN. Keep all animations in js/animations.js.
+
+Accessibility-first (aria labels, alt text, semantic HTML).
+
+Animations must follow PRD. Do not add effects not listed.
+
+For forms, implement front-end only. If no backend, mock with console log + placeholder alert.
+
+Optimize for performance: lazy-load images, compress to WebP, and keep scripts at the bottom with defer.
+
+Always use realistic, professional marketing copy (not “Lorem ipsum”).
+
+Only images use placeholders (e.g., /assets/solar-home.jpg, /assets/business-install.jpg).
+
+Copy tone: clear, trustworthy, solution-driven, aimed at homeowners + businesses.
+
+Keep sections structured as in the PRD.
+
+Animations enhance, not distract.

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Clean, affordable solar for homes and businesses. Trusted installation, storage solutions, and support. Get a free quote today."
+    />
+    <title>SolarCo — Clean, Affordable Solar for Home & Business</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              solarGreen: "#16a34a",
+              solarYellow: "#f59e0b",
+              solarNavy: "#0f172a",
+            },
+            fontFamily: {
+              sans: [
+                "Inter",
+                "system-ui",
+                "ui-sans-serif",
+                "Segoe UI",
+                "Roboto",
+                "Helvetica",
+                "Arial",
+                "Apple Color Emoji",
+                "Segoe UI Emoji",
+              ],
+            },
+            boxShadow: {
+              elevate: "0 8px 30px rgba(0,0,0,0.06)",
+            },
+          },
+        },
+        safelist: [
+          "shadow-sm",
+          "bg-white/80",
+          "backdrop-blur",
+          "text-solarGreen",
+        ],
+      };
+    </script>
+  </head>
+  <body class="min-h-screen font-sans text-slate-800 bg-white">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-solarYellow focus:text-slate-900 focus:px-3 focus:py-2 focus:rounded"
+      >Skip to content</a
+    >
+
+    <header
+      id="site-header"
+      class="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200 transition-shadow duration-300 supports-[backdrop-filter]:bg-white/60"
+    >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center gap-3">
+            <a
+              href="#hero"
+              class="flex items-center gap-2"
+              aria-label="SolarCo home"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                class="text-solarGreen"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 2a1 1 0 0 1 1 1v2.06a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Zm8.485 3.515a1 1 0 0 1 0 1.414l-1.457 1.457a1 1 0 1 1-1.414-1.414l1.457-1.457a1 1 0 0 1 1.414 0ZM2 13a1 1 0 1 1 0-2h2.06a1 1 0 1 1 0 2H2Zm17.94 0a1 1 0 1 1 0-2H22a1 1 0 1 1 0 2h-2.06ZM5.272 6.586a1 1 0 0 1 1.414 0l1.457 1.457A1 1 0 1 1 6.73 9.457L5.272 8a1 1 0 0 1 0-1.414ZM12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12Zm0-2a4 4 0 1 0 0-8a4 4 0 0 0 0 8Zm5.657 2.343a1 1 0 0 1-1.414 0l-1.457-1.457a1 1 0 1 1 1.414-1.414l1.457 1.457a1 1 0 0 1 0 1.414ZM11 22a1 1 0 1 1 2 0v-2.06a1 1 0 1 1-2 0V22Z"
+                />
+              </svg>
+              <span class="text-lg font-semibold tracking-tight text-solarNavy"
+                >SolarCo</span
+              >
+            </a>
+          </div>
+
+          <nav class="hidden md:flex items-center gap-6" aria-label="Primary">
+            <a
+              href="#why"
+              data-section="why"
+              class="text-sm font-medium text-slate-700 hover:text-solarGreen focus:outline-none focus-visible:ring-2 focus-visible:ring-solarYellow rounded"
+              >Why Solar</a
+            >
+            <a
+              href="#services"
+              data-section="services"
+              class="text-sm font-medium text-slate-700 hover:text-solarGreen focus:outline-none focus-visible:ring-2 focus-visible:ring-solarYellow rounded"
+              >Solutions</a
+            >
+            <a
+              href="#process"
+              data-section="process"
+              class="text-sm font-medium text-slate-700 hover:text-solarGreen focus:outline-none focus-visible:ring-2 focus-visible:ring-solarYellow rounded"
+              >Process</a
+            >
+            <a
+              href="#impact"
+              data-section="impact"
+              class="text-sm font-medium text-slate-700 hover:text-solarGreen focus:outline-none focus-visible:ring-2 focus-visible:ring-solarYellow rounded"
+              >Impact</a
+            >
+            <a
+              href="#testimonials"
+              data-section="testimonials"
+              class="text-sm font-medium text-slate-700 hover:text-solarGreen focus:outline-none focus-visible:ring-2 focus-visible:ring-solarYellow rounded"
+              >Testimonials</a
+            >
+            <a
+              href="#faq"
+              data-section="faq"
+              class="text-sm font-medium text-slate-700 hover:text-solarGreen focus:outline-none focus-visible:ring-2 focus-visible:ring-solarYellow rounded"
+              >FAQ</a
+            >
+          </nav>
+
+          <div class="hidden md:flex items-center gap-4">
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-md bg-solarGreen px-4 py-2 text-sm font-semibold text-white shadow-elevate hover:bg-emerald-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-solarYellow"
+              >Get a Free Quote</a
+            >
+          </div>
+
+          <div class="md:hidden">
+            <button
+              id="menu-button"
+              type="button"
+              class="inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:text-solarGreen focus:outline-none focus-visible:ring-2 focus-visible:ring-solarYellow"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              aria-label="Open menu"
+            >
+              <svg
+                id="icon-menu"
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <svg
+                id="icon-close"
+                class="h-6 w-6 hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden border-t border-slate-200 bg-white/90 backdrop-blur"
+      >
+        <nav class="px-4 py-3" aria-label="Mobile">
+          <div class="grid gap-1">
+            <a
+              href="#why"
+              data-section="why"
+              class="block rounded px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-solarGreen"
+              >Why Solar</a
+            >
+            <a
+              href="#services"
+              data-section="services"
+              class="block rounded px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-solarGreen"
+              >Solutions</a
+            >
+            <a
+              href="#process"
+              data-section="process"
+              class="block rounded px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-solarGreen"
+              >Process</a
+            >
+            <a
+              href="#impact"
+              data-section="impact"
+              class="block rounded px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-solarGreen"
+              >Impact</a
+            >
+            <a
+              href="#testimonials"
+              data-section="testimonials"
+              class="block rounded px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-solarGreen"
+              >Testimonials</a
+            >
+            <a
+              href="#faq"
+              data-section="faq"
+              class="block rounded px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-solarGreen"
+              >FAQ</a
+            >
+            <a
+              href="#contact"
+              class="mt-2 inline-flex items-center justify-center rounded-md bg-solarGreen px-4 py-2 text-sm font-semibold text-white shadow-elevate hover:bg-emerald-600"
+              >Get a Free Quote</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <!-- Content sections will be implemented per PRD (hero, why, services, etc.) -->
+    </main>
+
+    <footer class="mt-24 border-t border-slate-200 bg-slate-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid gap-10 md:grid-cols-4">
+          <div class="md:col-span-2">
+            <div class="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                class="text-solarGreen"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 2a1 1 0 0 1 1 1v2.06a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Zm8.485 3.515a1 1 0 0 1 0 1.414l-1.457 1.457a1 1 0 1 1-1.414-1.414l1.457-1.457a1 1 0 0 1 1.414 0ZM2 13a1 1 0 1 1 0-2h2.06a1 1 0 1 1 0 2H2Zm17.94 0a1 1 0 1 1 0-2H22a1 1 0 1 1 0 2h-2.06ZM5.272 6.586a1 1 0 0 1 1.414 0l1.457 1.457A1 1 0 1 1 6.73 9.457L5.272 8a1 1 0 0 1 0-1.414ZM12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12Zm0-2a4 4 0 1 0 0-8a4 4 0 0 0 0 8Zm5.657 2.343a1 1 0 0 1-1.414 0l-1.457-1.457a1 1 0 1 1 1.414-1.414l1.457 1.457a1 1 0 0 1 0 1.414ZM11 22a1 1 0 1 1 2 0v-2.06a1 1 0 1 1-2 0V22Z"
+                />
+              </svg>
+              <span class="text-lg font-semibold tracking-tight text-solarNavy"
+                >SolarCo</span
+              >
+            </div>
+            <p class="mt-4 max-w-xl text-sm text-slate-600">
+              We design and install reliable solar systems for homes and
+              businesses, delivering long-term savings and sustainability with
+              certified expertise.
+            </p>
+            <div class="mt-6 flex items-center gap-4" aria-label="Social media">
+              <a
+                class="text-slate-600 hover:text-solarGreen"
+                href="#"
+                aria-label="LinkedIn"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.784 1.764-1.75 1.764zm13.5 11.268h-3v-5.604c0-1.337-.027-3.058-1.863-3.058-1.865 0-2.151 1.457-2.151 2.964v5.698h-3v-10h2.879v1.367h.041c.401-.76 1.379-1.562 2.839-1.562 3.036 0 3.6 2.001 3.6 4.604v5.591z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="text-slate-600 hover:text-solarGreen"
+                href="#"
+                aria-label="Facebook"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22.674 0H1.326C.594 0 0 .593 0 1.326v21.348C0 23.406.594 24 1.326 24h11.494v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.794.143v3.24h-1.917c-1.504 0-1.795.716-1.795 1.765v2.314h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.406 24 22.674V1.326C24 .593 23.406 0 22.674 0z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="text-slate-600 hover:text-solarGreen"
+                href="#"
+                aria-label="X (Twitter)"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M18.244 2H21.5l-7.62 8.715L23.5 22h-7.09l-5.546-6.514L4.5 22H1.244l8.163-9.334L2 2h7.21l5.017 5.86L18.244 2Zm-1.244 18h2.004L7.084 4H5.08L17 20Z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="text-slate-600 hover:text-solarGreen"
+                href="#"
+                aria-label="YouTube"
+                rel="noopener"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M23.498 6.186a2.998 2.998 0 0 0-2.114-2.12C19.592 3.5 12 3.5 12 3.5s-7.592 0-9.384.566a2.998 2.998 0 0 0-2.114 2.12A31.166 31.166 0 0 0 0 12a31.165 31.165 0 0 0 .502 5.814c.278 1.007 1.107 1.796 2.114 2.074C4.408 20.5 12 20.5 12 20.5s7.592 0 9.384-.566a2.998 2.998 0 0 0 2.114-2.074A31.165 31.165 0 0 0 24 12a31.166 31.166 0 0 0-.502-5.814ZM9.75 15.5v-7l6 3.5l-6 3.5Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold text-slate-900">Quick Links</h3>
+            <ul class="mt-4 space-y-2" role="list">
+              <li>
+                <a
+                  class="text-sm text-slate-600 hover:text-solarGreen"
+                  href="#why"
+                  >Why Solar</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-slate-600 hover:text-solarGreen"
+                  href="#services"
+                  >Solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-slate-600 hover:text-solarGreen"
+                  href="#process"
+                  >Process</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-slate-600 hover:text-solarGreen"
+                  href="#impact"
+                  >Impact</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-slate-600 hover:text-solarGreen"
+                  href="#testimonials"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-slate-600 hover:text-solarGreen"
+                  href="#faq"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold text-slate-900">Certifications</h3>
+            <ul class="mt-4 space-y-2" role="list">
+              <li class="flex items-center gap-2 text-sm text-slate-600">
+                <span
+                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-solarGreen/10 text-solarGreen"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                NABCEP Certified
+              </li>
+              <li class="flex items-center gap-2 text-sm text-slate-600">
+                <span
+                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-solarGreen/10 text-solarGreen"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                SEIA Member
+              </li>
+              <li class="flex items-center gap-2 text-sm text-slate-600">
+                <span
+                  class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-solarGreen/10 text-solarGreen"
+                  aria-hidden="true"
+                  >✓</span
+                >
+                Licensed & Insured
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="mt-10 flex flex-col gap-4 border-t border-slate-200 pt-6 md:flex-row md:items-center md:justify-between"
+        >
+          <p class="text-xs text-slate-500">
+            © <span id="year"></span> SolarCo. All rights reserved.
+          </p>
+          <div class="flex gap-6 text-xs text-slate-500">
+            <a href="#" class="hover:text-solarGreen">Privacy Policy</a>
+            <a href="#" class="hover:text-solarGreen">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <!-- Site scripts -->
+    <script src="js/animations.js" defer></script>
+  </body>
+</html>
