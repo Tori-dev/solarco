@@ -788,4 +788,81 @@
       gsap.set([headingF, copyF], { clearProps: "all", opacity: 1, y: 0 });
     }
   }
+
+  // --- CTA (Contact) reveal + CTA glow ---
+  var ctaSection = document.getElementById("contact");
+  if (ctaSection && window.gsap) {
+    var prefersReducedMotionCta = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    var ctaHeading = ctaSection.querySelector(".cta-heading");
+    var ctaCopy = ctaSection.querySelector(".cta-copy");
+    var ctaCard = ctaSection.querySelector(".cta-card");
+    var ctaButton = document.getElementById("cta-submit");
+
+    // Initial states
+    gsap.set([ctaHeading, ctaCopy], { opacity: 0, y: 18 });
+    gsap.set(ctaCard, { opacity: 0, y: 24, scale: 0.98 });
+
+    function revealCta() {
+      var tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+      tl.to([ctaHeading, ctaCopy], {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        stagger: 0.15,
+      }).to(ctaCard, { opacity: 1, y: 0, scale: 1, duration: 0.7 }, "-=0.2");
+
+      // Subtle attention pulse on the button
+      if (ctaButton && !prefersReducedMotionCta) {
+        gsap.fromTo(
+          ctaButton,
+          { boxShadow: "0 8px 30px rgba(0,0,0,0.08)" },
+          {
+            boxShadow: "0 12px 45px rgba(22,163,74,0.35)",
+            duration: 1.2,
+            ease: "sine.inOut",
+            yoyo: true,
+            repeat: 2,
+            delay: 0.3,
+          }
+        );
+      }
+    }
+
+    if (!prefersReducedMotionCta) {
+      if (window.ScrollTrigger) {
+        gsap.registerPlugin(ScrollTrigger);
+        ScrollTrigger.create({
+          trigger: ctaSection,
+          start: "top 75%",
+          once: true,
+          onEnter: revealCta,
+        });
+      } else if ("IntersectionObserver" in window) {
+        var ioCTA = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                revealCta();
+                ioCTA.disconnect();
+              }
+            });
+          },
+          { root: null, rootMargin: "0px", threshold: 0.3 }
+        );
+        ioCTA.observe(ctaSection);
+      } else {
+        setTimeout(revealCta, 300);
+      }
+    } else {
+      gsap.set([ctaHeading, ctaCopy, ctaCard], {
+        clearProps: "all",
+        opacity: 1,
+        y: 0,
+        scale: 1,
+      });
+    }
+  }
 })();
